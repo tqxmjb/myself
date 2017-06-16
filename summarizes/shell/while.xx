@@ -1,0 +1,10 @@
+#!/bin/sh
+while read FILM
+do
+if [ $FILM == 'exit' ]
+then 
+	break
+else
+	echo $FILM
+fi
+done

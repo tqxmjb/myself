@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var img;
+        function readFile(obj){
+            var file = obj.files[0];
+            //判断类型是不是图片
+            if(!/image\/\w+/.test(file.type)){
+                alert("请确保文件为图像类型");
+                return false;
+            }
+            var reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = function(e){
+                img = this.result;
+                $("img").attr('src',img);
+                alert(img); //就是base64
+
+            }
+        }
+
+        $(document).on('click', 'button', function(){
+//            var url = "http://localhost/moneplus/wxtest/imgToBase64.php";
+            var url = "http://api.slb.moneplus.cn/wechat/test.php?r=common/upload/res";
+            $.ajax({
+                url: url,
+                type: "POST",
+                dataType:'json',
+                data: {
+                    type:'base64',
+                    dir:'dir',
+                    base64: img
+                },
+                success: function (result) {
+                    console.log(result);
+                    //alert(`result:\n ${result}`);
+                },
+                error: null
+            });
+        })
+    </script>
+</head>
+<body>
+<input type="file"  id="picFile" onchange="readFile(this)" />
+<img src=""/>
+<button>sub</button>
+</body>
+</html>
