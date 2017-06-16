@@ -194,3 +194,10 @@
 2016-12-01 18:06:29 Workerman[start.php] has been stopped
 2016-12-01 18:06:29 Workerman[start.php] stop success
 2016-12-01 18:06:32 Workerman[start.php] start in DAEMON mode
+2017-06-16 16:26:07 Workerman[start.php] start in DAEMON mode
+2017-06-16 16:30:14 Workerman[start.php] stop 
+2017-06-16 16:30:14 Workerman[start.php] is stoping ...
+2017-06-16 16:30:14 Workerman[start.php] Stopping ...
+2017-06-16 16:30:14 Workerman[start.php] has been stopped
+2017-06-16 16:30:14 Workerman[start.php] stop success
+2017-06-16 16:30:36 Workerman[start.php] start in DAEMON mode
