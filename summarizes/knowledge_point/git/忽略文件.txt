@@ -1,2 +1,2 @@
-git update-index --assume-unchanged /path/to/file    //ÉèÖÃºöÂÔµÄÎÄ¼ş
-git update-index --no-assume-unchanged /path/to/file //È¡ÏûºöÂÔµÄÎÄ¼ş
+git update-index --assume-unchanged /path/to/file    //è®¾ç½®å¿½ç•¥çš„æ–‡ä»¶
+git update-index --no-assume-unchanged /path/to/file //å–æ¶ˆå¿½ç•¥çš„æ–‡ä»¶

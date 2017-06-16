@@ -1,6 +1,6 @@
 <?php
 header("Content-Type:text/html;charset=utf8");
-echo "µ±Ç°Ä¿Â¼ÏÂËùÓĞÎÄ¼ş:"."<br>";
+echo "å½“å‰ç›®å½•ä¸‹æ‰€æœ‰æ–‡ä»¶:"."<br>";
 function getFiles($path)
 {
     foreach(scandir($path) as $a_file) {
