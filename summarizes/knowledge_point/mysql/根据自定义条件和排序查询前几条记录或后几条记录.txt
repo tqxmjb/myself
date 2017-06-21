@@ -1,0 +1,13 @@
+SELECT * FROM (
+	SELECT b.*,@rownum:=@rownum+1,@rank rank1
+	,IF(b.id=3207,@rank:=@rank+1,@rank) AS rank2
+	FROM (SELECT * FROM w_corolla_cards ORDER BY card_sn DESC)b,(SELECT @rownum:=0,@rank:=0)a
+)a
+WHERE rank1>0 ORDER BY rank1 LIMIT 0,10;
+SELECT * FROM (
+	SELECT b.*,@rownum:=@rownum+1,@rank rank1
+	,IF(b.id=3207,@rank:=@rank+1,@rank) AS rank2
+	FROM (SELECT * FROM w_corolla_cards ORDER BY card_sn)b,(SELECT @rownum:=0,@rank:=0)a
+)a
+WHERE rank1>0 ORDER BY rank1 LIMIT 0,10;
+SELECT * FROM w_corolla_cards ORDER BY card_sn;
