@@ -1,2 +1,7 @@
+﻿planA 命令执行
 git update-index --assume-unchanged /path/to/file    //设置忽略的文件
 git update-index --no-assume-unchanged /path/to/file //取消忽略的文件
+
+planB 添加.gitignore文件
+1.git rm --cached testFile//将文件移除版本控制
+2.在.gitignore中设置testFile路径
