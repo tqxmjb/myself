@@ -202,3 +202,13 @@
 2017-06-16 16:30:14 Workerman[start.php] stop success
 2017-06-16 16:30:36 Workerman[start.php] start in DAEMON mode
 2017-06-20 14:20:06 Workerman[web_barrage/start.php] start in DAEMON mode
+2017-08-28 17:05:02 Workerman[start.php] start in DEBUG mode
+2017-08-28 17:58:21 Workerman[start.php] Stopping ...
+2017-08-28 17:58:21 Workerman[start.php] has been stopped
+2017-08-29 10:16:56 Workerman[start_io.php] -d 
+2017-08-29 10:16:56 Workerman[start_io.php] not run
+2017-08-29 10:17:03 Workerman[start_io.php] start in DAEMON mode
+2017-08-29 10:18:00 Workerman[start_io.php] start in DAEMON mode
+2017-08-29 10:18:00 Workerman[start_io.php] already running
+2017-08-29 10:18:14 Workerman[start_io.php] status 
+2017-08-29 11:52:57 Workerman[start_io.php] status 
